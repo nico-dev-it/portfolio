@@ -1,0 +1,85 @@
+.nav-link {
+	display: flex;
+	justify-content: flex-start;
+	gap: 20px;
+	
+}
+
+a {
+	text-decoration: none;
+	color:#3F5963;
+	font-weight: bold;
+}
+.contact-button {
+	display: flex;
+	justify-content: flex-end;
+	gap: 20px;
+}
+
+nav {
+	align-items: center;
+	display:flex;
+	padding: 20px;
+	justify-content: space-between;
+	background-color:#E1E1E1;
+	width:100%;
+	position: fixed;
+	top:0;
+	left:0;
+	right:0;
+	position: fixed;
+	border-bottom:2px solid #3F5963;
+	font-family: "Work Sans", sans-serif;
+	text-transform: uppercase;
+	font-weight: bold;
+	
+		
+}
+
+* {
+	box-sizing:border-box;
+}
+
+.intro_outerbox {
+	display: flex;
+	flex-direction: column;
+	padding:30px;
+/*	border-bottom: 1px solid black;
+*/	
+}
+
+.intro_container {
+	display: flex;
+	margin: 0 0;
+	font-family: "Work Sans", sans-serif;
+	font-weight: bold;
+	font-size: 2rem;
+	color: #FF7E67;
+}
+
+
+.intro {
+	font-family: "Work Sans", sans-serif;
+	font-size: 2rem;
+	border: 2px solid #FF7E67;
+	border-radius:5px;
+	padding: 5px;
+}
+
+header img {
+	width: 50vw;
+	display: flex;
+	z-index: -1;
+}
+
+header {
+	padding:20px;
+	display: flex;
+	justify-content: center;	
+	border-bottom: 1px solid #3F5963;
+	color: #3F5963;
+}
+	
+.intro h3 {
+	font-family: Merryweather, serif;
+}
