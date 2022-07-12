@@ -1,85 +1,279 @@
+* {
+	box-sizing:border-box;
+}
+
 .nav-link {
 	display: flex;
 	justify-content: flex-start;
 	gap: 20px;
+}
+
+.nav-link a {
+	text-decoration: none;
+	color:#FAFAFA;
+	font-weight: bold;
+}
+
+.nav-link a:hover {
+	color: #FF7E67;
+	display: flex;
+	height: 2rem;
+	align-items: center;
+	cursor: pointer;
+	font-size: 2rem;
 	
 }
 
-a {
-	text-decoration: none;
-	color:#3F5963;
-	font-weight: bold;
-}
 .contact-button {
 	display: flex;
 	justify-content: flex-end;
 	gap: 20px;
 }
 
+.contact-button a {
+	text-decoration: none;
+	color:#FAFAFA;
+	font-weight: bold;
+	font-size: 2rem;
+}
+
+.contact-button a:hover{
+	color: #FF7E67;
+	display: flex;
+	height: 3rem;
+	align-items: center;
+	cursor: pointer;
+	font-size: 2rem;
+}
 nav {
 	align-items: center;
 	display:flex;
 	padding: 20px;
 	justify-content: space-between;
-	background-color:#E1E1E1;
+	background-color:#3F5963;
 	width:100%;
-	position: fixed;
 	top:0;
 	left:0;
 	right:0;
 	position: fixed;
-	border-bottom:2px solid #3F5963;
+	border-bottom:2px solid #FF7E67;
 	font-family: "Work Sans", sans-serif;
 	text-transform: uppercase;
-	font-weight: bold;
-	
-		
-}
-
-* {
-	box-sizing:border-box;
+	font-weight: bold;	
 }
 
 .intro_outerbox {
-	display: flex;
+	display:flex;
 	flex-direction: column;
-	padding:30px;
-/*	border-bottom: 1px solid black;
-*/	
+	padding: 40px;
+
 }
 
 .intro_container {
 	display: flex;
-	margin: 0 0;
+	margin: 20px 0 0;
 	font-family: "Work Sans", sans-serif;
 	font-weight: bold;
-	font-size: 2rem;
-	color: #FF7E67;
+	font-size: 3rem;
+	color: #FFFFFF;
+	background-color: #FF7E67;
+	padding: 5px;
+	
+}
+.intro_container a {
+	text-decoration:none;
+	color: #FAFAFA;
 }
 
+.intro_container a:hover {
+	text-decoration:none;
+	color: #3F5963;
+}
 
 .intro {
 	font-family: "Work Sans", sans-serif;
 	font-size: 2rem;
 	border: 2px solid #FF7E67;
-	border-radius:5px;
 	padding: 5px;
 }
 
 header img {
-	width: 50vw;
+	width: 50%;
 	display: flex;
 	z-index: -1;
+	height:70%;
+	align-items: center;
 }
 
 header {
-	padding:20px;
+	padding:10px;
 	display: flex;
 	justify-content: center;	
-	border-bottom: 1px solid #3F5963;
 	color: #3F5963;
+	height:90vh;
+	align-items:center;
 }
-	
+
+.arrow {
+	font-size:5rem;
+	display: flex;
+	justify-content: center;
+	color:#3F5963;
+}	
+.arrow a:hover {
+	text-decoration: none;
+	color:#3F5963;
+}
+.arrow a {
+	text-decoration: none;
+	color:#3F5963;
+}
 .intro h3 {
 	font-family: Merryweather, serif;
 }
+
+#about_me {
+	display: flex;
+	flex-direction:column;
+	background-color: #1E2E35;
+	width:100vw;
+	margin:0px;
+	padding: 60px;
+	color:#FF7E67;	
+}
+
+#portfolio {
+	display: flex;
+	flex-direction:row;
+	background-color: #E1E1E1;
+	width:100vw;
+	margin:0px;
+	padding: 70px;
+	color:#FF7E67;
+}
+.container {
+	margin: 0 40px;
+}
+
+.project {
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+	justify-content: space-evenly;
+}
+
+.description {
+		justify-content: center;
+}
+.project .content {
+	display: flex;
+	background-color:rgba(30, 46, 53,0.2);
+	color:#1E2E35;
+}
+.project .content img {
+	width: 20vw;
+	margin-right: 50px;
+}
+
+.link {
+	text-align: right;
+	display: block;
+}
+
+
+h2 {
+	font-family: "Work Sans", sans-serif;
+}
+
+h3 {
+	color:#3F5963;
+	font-family: "Work Sans", sans-serif;
+}
+
+p {
+	font-family: "Work Sans", sans-serif;
+}
+
+body {
+	margin:0;
+}
+
+#contact {
+	display: flex;
+	flex-direction:column;
+	background-color: #3F5963;
+	width:100vw;
+	margin:0px;
+	padding: 30px;
+	color: #E1E1E1;
+}
+
+.contact_container {
+	display: flex;
+	flex-direction: row;
+	gap: 30px;
+}
+.contact_container a {
+	text-decoration: none;
+	color:#FAFAFA;
+	font-weight: bold;
+	font-size: 2rem;
+	gap: 10px;
+}
+
+.contact_container a:hover{
+	color: #FF7E67;
+	cursor: pointer;
+}
+
+footer {
+	border-top: 2px solid #E1E1E1;
+	padding: 10px;
+	background-color: #B25747;
+	color: #E1E1E1;
+	display:flex;
+	justify-content: space-between;
+}
+.up {
+	margin-right:10px;
+	font-size: 3rem;
+}
+
+.up a {
+	text-decoration: none;
+	color:#E1E1E1;
+}
+.up a:hover {
+	text-decoration: none;
+	color:#E1E1E1;
+}
+
+@media screen and (max-width: 600px) {
+	html {
+		font-size: 12px
+	}
+	body {
+		display: flex;
+		flex-direction: column;
+		padding: 0;
+		width: 100vw;
+  }
+	header {
+		width: 100vw;
+		display: flex;
+		flex-direction: column;
+	}
+	header img {
+		width: 100vw;
+		align-items:center;
+	}
+	.intro_outerbox {
+		width: 100vw;
+	}
+	.project .content {
+		display: flex;
+		flex-direction: column;
+	}
+	
+}
+
