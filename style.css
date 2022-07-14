@@ -3,7 +3,7 @@
 	scroll-behavior: smooth;
 }
 
-.nav-link {
+.nav-link-container {
 	display: flex;
 	justify-content: flex-start;
 	gap: 20px;
@@ -21,38 +21,38 @@ img[alt="UK"] {
 	border:1px solid white;
 	border-radius: 15px;
 }
-.nav-link a {
+.nav-link-container a {
 	text-decoration: none;
-	color:#FAFAFA;
+	color: #FAFAFA;
 	font-weight: bold;
+	transition: all 0.2s;
 }
 
-.nav-link a:hover {
+.nav-link-container a:hover {
 	color: #FF7E67;
 	display: flex;
-	height: 2rem;
 	align-items: center;
 	cursor: pointer;
 	font-size: 2rem;
+	transition: all 0.2s;
 }
 
-.contact-button {
+.contact-button-container {
 	display: flex;
 	justify-content: flex-end;
 	gap: 20px;
 }
 
-.contact-button a {
+.contact-button-container a {
 	text-decoration: none;
 	color:#FAFAFA;
 	font-weight: bold;
 	font-size: 2rem;
 }
 
-.contact-button a:hover{
+.contact-button-container a:hover{
 	color: #FF7E67;
 	display: flex;
-	height: 3rem;
 	align-items: center;
 	cursor: pointer;
 	font-size: 2rem;
@@ -111,9 +111,11 @@ nav {
 	background-color: #FAFAFA;
 }
 
+.intro.p {
+	font-size: 12px;
+}
 header img {
 	width: 50%;
-	display: flex;
 	z-index: -1;
 	height:auto;
 	align-items: center;
@@ -176,6 +178,7 @@ img[alt="another coder"] {
 }
 .headshot {
 	background-color: rgba(255, 126, 103, 0.3);
+	
 }
 .content_about {
 	display: flex;
@@ -303,41 +306,21 @@ footer {
 	color:#3F5963;
 }
 
-/*@media screen and (max-width: 1000px) {*/
-/*	header {*/
-/*		width: 80vw;*/
-/*		height: auto;*/
-/*		display: flex;*/
-/*		flex-direction: column;*/
-/*	}*/
-/*	header img {*/
-/*		width: 80%;*/
-/*		height:auto;*/
-/*	}*/
-
-/*	.intro_outerbox {*/
-/*		width: 70%;*/
-/*		*/
-/*	}*/
-/*	.arrow {*/
-/*		padding-top: 5px;*/
-/*		font-size: 2rem;*/
-/*		text-align: center;*/
-/*		width: 100%;*/
-/*		position: relative;*/
-/*	}*/
-/*}*/
+span {
+	font-weight: bold;
+}
 
 @media screen and (max-width: 900px) {
-	html {
-		font-size: 10px
-	}
 
+	html {
+		font-size: 13px;
+	}
 	nav {
 		height: 10px;
 	}
-	.nav-link {
+	.nav-link-container {
 		gap: 10px;
+		font-size: 12px;
 	}
 	body {
 		display: flex;
@@ -361,14 +344,19 @@ footer {
 	.intro_outerbox {
 		width: 100%;
 	}
-	
+
 	.project .content {
 		display: flex;
 		flex-direction: column;
+		padding: 10px;
 	}
-	
+
+	.content img {
+		min-width: 200px;
+		width: 100%;
+	}
 	.arrow {
-		font-size: 2rem;
+		font-size: 4rem;
 		position: relative;
 		bottom: 5px;
 		text-align: center;
@@ -388,10 +376,8 @@ footer {
 	}
 	.headshot {
 		max-width: 200px;
-	}
-	img[alt="another coder"] {
 		width: 100%;
 		align-items: center;
 	}
-}
+
 
